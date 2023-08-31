@@ -15,7 +15,7 @@ int binary_tree_is_perfect(const binary_tree_t *tree);
  */
 unsigned char is_leaf(const binary_tree_t *nd)
 {
-	return ((node->left == NULL && nd->right == NULL) ? 1 : 0);
+	return ((nd->left == NULL && nd->right == NULL) ? 1 : 0);
 }
 
 /**
