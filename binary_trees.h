@@ -45,6 +45,11 @@ void binary_tree_print(const binary_tree_t *);
 size_t high(const binary_tree_t *stem);
 int is_avl_helper(const binary_tree_t *stem, int a, int b);
 int binary_tree_is_avl(const binary_tree_t *stem);
+unsigned char is_leaf(const binary_tree_t *nd);
+size_t depth(const binary_tree_t *stem);
+const binary_tree_t *get_leaf(const binary_tree_t *stem);
+int is_perfect_recursive(const binary_tree_t *stem,
+                size_t leaf_depth, size_t level);
 
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
 binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value);
